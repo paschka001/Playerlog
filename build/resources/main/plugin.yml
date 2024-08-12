@@ -2,5 +2,5 @@ name: Playerlog
 version: '0.1'
 main: playerlog.playerlog.Playerlog
 api-version: '1.19'
-authors: [ SKIPER ]
+authors: [SKIPER]
 description: Этот плагин нужен для отслеживания действий игроков. Какие они команды пишут или сообщения в чат сервера

@@ -13,15 +13,13 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Playerlog extends JavaPlugin implements Listener
-{
+public class Playerlog extends JavaPlugin implements Listener {
 
     private File chatLogFile;
     private File commandLogFile;
 
     @Override
     public void onEnable() {
-
         chatLogFile = new File(getDataFolder(), "chat_log.txt");
         commandLogFile = new File(getDataFolder(), "command_log.txt");
 
@@ -39,13 +37,14 @@ public class Playerlog extends JavaPlugin implements Listener
             e.printStackTrace();
         }
 
-        getServer().getPluginManager().registerEvents(this, this);//регестрация событий
+        // Регистрация событий
+        getServer().getPluginManager().registerEvents(this, this);
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
     }
 
     @EventHandler
